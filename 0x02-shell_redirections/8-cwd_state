@@ -1,2 +1,2 @@
 #!/bin/bash
-echo ls -la > ls_cwd_content
+echo list the content of working directory including hidden files in long format > ls_cwd_content
