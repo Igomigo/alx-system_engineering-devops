@@ -4,9 +4,7 @@
 # Format:
 #The user USERNAME is part of the GROUP_ID gang, lives in HOME_DIRECTORY and rides COMMAND/SHE#LL. USER ID's place is protected by the passcode PASSWORD, more info about the user here: USER# ID INFO
 
-IFS=":"
-
-while read -r USERNAME PASSWORD U_ID GID FULLNAME HOME_DIRECTORY LOGIN_SHELL
+while IFS=":" read -r USERNAME PASSWORD U_ID GID FULLNAME HOME_DIRECTORY LOGIN_SHELL
 do
   echo "The user $USERNAME is part of the $GID gang,
   lives in $HOME_DIRECTORY and rides $LOGIN_SHELL. 
