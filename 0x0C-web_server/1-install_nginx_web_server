@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script installs nginx on the server,
+# configures nginx to listen for incoming requests on port 80,
+# and to return a "Hello World" response whenever we query nginx
+# with a GET request using the `curl` command in the server's root.
+
+apt-get -y update
+apt-get -y install nginx
+ufw allow 80
+echo 'Hello World!' > var/www/html/index.html
+systemctl restart nginx
