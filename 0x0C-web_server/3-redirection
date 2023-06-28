@@ -4,7 +4,7 @@
 
 sudo apt-get update
 sudo apt-get install -y nginx
-echo "Hello World!" | sudo tee /etc/nginx/html/index.html
+echo "Hello World!" > /etc/nginx/html/index.html
 sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
 printf %s "server {
     listen 80;
