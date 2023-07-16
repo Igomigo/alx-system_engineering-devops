@@ -1,0 +1,41 @@
+Title: Exploring the Journey of an HTTPS Request: Demystifying the Behind-the-Scenes of Browsing
+
+Introduction:
+When you type "https://www.google.com" in your browser and hit Enter, it initiates a series of intricate processes behind the scenes. In this blog post, we will take a deep dive into each stage of this journey, shedding light on the role of DNS, TCP/IP, firewalls, HTTPS/SSL, load balancers, web servers, application servers, and databases. So, let's unravel the fascinating journey of an HTTPS request!
+
+DNS Request:
+As soon as you hit Enter, your browser begins by resolving the domain name "www.google.com" to an IP address using the Domain Name System (DNS). It sends a DNS request to a DNS server, which maps the human-readable domain name to its corresponding IP address. Once the IP address is obtained, the browser can move forward.
+
+TCP/IP:
+With the IP address in hand, your browser establishes a Transmission Control Protocol (TCP) connection with the IP address through the Internet Protocol (IP). TCP/IP ensures reliable communication by breaking the data into packets, transmitting them over the internet, and reassembling them at the destination.
+
+Firewall:
+As the TCP connection is established, the data packets pass through firewalls. Firewalls act as a security barrier, analyzing the incoming and outgoing network traffic based on predefined rules. They monitor and filter the packets to protect the network from unauthorized access and potential threats.
+
+HTTPS/SSL:
+To secure the communication between your browser and the server, HTTPS (Hypertext Transfer Protocol Secure) is employed. It uses Secure Sockets Layer (SSL) or Transport Layer Security (TLS) protocols to establish an encrypted connection. The server presents an SSL certificate to verify its identity, encrypts the data, and ensures that it cannot be intercepted or tampered with during transmission.
+
+Load Balancer:
+In high-traffic scenarios, load balancers play a vital role. Load balancers distribute incoming requests across multiple web servers to optimize performance, ensure high availability, and prevent overload. They act as intermediaries, receiving the HTTPS request, determining the appropriate web server to handle it, and forwarding the request accordingly.
+
+Web Server:
+Once the load balancer selects a web server to handle the request, it reaches the web server responsible for serving the requested content. The web server receives the HTTPS request, decrypts the encrypted data using the SSL certificate's private key, and processes the request. It may retrieve files, execute scripts, or interact with databases to generate the response.
+
+Application Server:
+In some cases, an application server comes into play. Application servers handle dynamic content and business logic. They execute server-side code, interact with databases, process data, and generate dynamic responses tailored to the user's request. If needed, the web server forwards the request to the application server, which performs the necessary operations before returning the response.
+
+Database:
+If the request requires data retrieval or manipulation, the application server communicates with the database. The database stores and manages the website's structured information. It receives queries from the application server, retrieves the relevant data, performs any necessary operations, and returns the requested information to the application server.
+
+Conclusion:
+As you can see, the seemingly simple act of typing "https://www.google.com" in your browser initiates a complex sequence of events involving DNS resolution, TCP/IP connection establishment, firewall checks, HTTPS/SSL encryption, load balancing, web server processing, application server execution, and database interactions. Understanding this behind-the-scenes journey enhances our appreciation for the intricate infrastructure that enables secure and efficient browsing experiences.
+
+Next time you press Enter, take a moment to reflect on the remarkable process that unfolds to deliver the desired content to your screen. The magic lies in the collaborative efforts of these components working in harmony to create the seamless browsing experience we often take for granted.
+
+So, the next time you embark on an online adventure, remember the journey your request takes, traversing the vast expanse of the internet and engaging an intricate web of technologies to bring you the information you seek.
+
+Happy browsing!
+
+[Igomigo Fatai Victor]
+
+Disclaimer: This blog post provides a simplified overview of the technical processes involved in an HTTPS request. The specific implementation details and configurations may vary depending on the infrastructure, protocols, and technologies employed by individual websites and organizations.
